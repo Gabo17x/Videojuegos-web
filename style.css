@@ -1,0 +1,207 @@
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- BODY --- */
+body {
+    background-color: #000; /* negro de fondo general */
+    color: #fff; /* texto blanco para contraste */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* --- NAV --- */
+nav {
+    background-color: #111; /* negro un poco más claro */
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e90ff; /* azul destacado */
+    font-weight: 600;
+}
+
+/* --- HEADINGS --- */
+h1, h2, h3, h4, h5 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #1e90ff; /* azul para títulos */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+h3, h4, h5 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+/* --- SECTIONS --- */
+section, article {
+    background-color: #111; /* secciones negras */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 5px solid #1e90ff; /* barra azul lateral */
+}
+
+/* --- PARRAFOS --- */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* --- IMÁGENES como fondo de Noticias --- */
+.noticia {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* --- FORMULARIOS --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+/* --- BOTONES --- */
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- LISTAS --- */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* --- TABLAS --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #1e90ff;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #111;
+    margin-top: 30px;
+}
+
+/* --- HERO principal --- */
+.hero {
+    position: relative;
+    background-image: url('img/GettyImages-2173216162-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero-overlay h1, .hero-overlay h2, .hero-overlay p {
+    color: #fff;
+}
+/* --- FORMULARIO DE CONTACTO --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;   /* tamaño más pequeño */
+    margin: 0 auto;     /* centrado horizontal */
+    background-color: rgba(0,0,0,0.7); /* fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;  
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    color: #000;
+}
+
+form button {
+    width: 150px; 
+    margin: 0 auto; 
+    background-color: #1e90ff;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}

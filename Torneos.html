@@ -1,75 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro Gamer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🎮 Torneos Gamer</h1>
-
 <nav>
-  <a href="index.html">Inicio</a> 
- <a href="Torneos.html">Torneos</a>
-  <a href="Noticias.html">Noticias</a> 
-  <a href="Reseñas.html">Reseñas</a> 
-  <a href="Contacto.html">Contacto</a>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="Torneos.html">Torneos</a></li>
+        <li><a href="Reseñas.html">Reseñas</a></li>
+        <li><a href="Noticias.html">Noticias</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
 </nav>
 
-<hr>
+<h1>EL MUNDO DE LOS VIDEOJUEGOS</h1>
 
-<h2>🏆 Próximo Torneo</h2>
-<p><strong>Juego:</strong> Free Fire</p>
-<p><strong>Juego:</strong> Fornite</p>
-<p><strong>Juego:</strong> Call of Duty</p>
-<p><strong>Juego:</strong> FIFA</p>
-<p><strong>Juego:</strong> Clash Royale</p>
-<p><strong>Fecha:</strong> 20 de marzo</p>
-<p><strong>Premio:</strong> $500,000 COP</p>
+<section class="hero">
+    <div class="hero-overlay">
+        <h2>La Revolución Gamer</h2>
+        <p>Explora el universo de los videojuegos modernos</p>
+        <a href="https://torneum.com/" class="btn">Explorar Ahora</a>
+    </div>
+</section>
 
-<img src="img/torne.jpg" alt="Torneo de videojuegos" width="300">
+<section id="registro">
+    <article class="contenedor">
+        <h2>Registro de Jugador</h2>
+        <p>Completa el formulario</p>
+        <hr>
+        <form action="/submit" method="post">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+            <label>Apellido:</label>
+            <input type="text" name="apellido" required>
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" required>
+            <label>Correo electrónico:</label>
+            <input type="email" name="email" required>
+            <label>Contraseña:</label>
+            <input type="password" name="password" required>
+            <hr>
+            <label>Foto de perfil:</label>
+            <input type="file">
+            <label>Color favorito:</label>
+            <input type="color">
+            <label>Fecha de nacimiento:</label>
+            <input type="date">
+            <label>Mes de ingreso:</label>
+            <input type="month">
+            <label>Género:</label>
+            <input type="radio" name="sexo"> M
+            <input type="radio" name="sexo"> F
+            <br><br>
+            <label>Nivel de jugador:</label>
+            <select>
+                <option>Principiante</option>
+                <option>Intermedio</option>
+                <option>Avanzado</option>
+                <option>Experto</option>
+            </select>
+            <hr>
+            <h3>Términos y condiciones</h3>
+            <p>El usuario se compromete a usar la página de forma responsable.</p>
+            <label><input type="checkbox"> Acepto términos</label>
+            <br><br>
+            <button type="submit" class="btn">Registrarse</button>
+        </form>
+    </article>
+</section>
 
-<hr>
-
-<h2>Inscripciones</h2>
-
-<form>
-  <label>Nombre:</label><br>
-  <input type="text"><br><br>
-
-  <label>Juego:</label><br>
-  <input type="text"><br><br>
-
-  <button type="submit">Inscribirse</button>
-</form>
-
-<hr>
-
-<h2>Tabla de posiciones</h2>
-
-<table border="1">
-  <tr>
-    <th>Jugador</th>
-    <th>Puntos</th>
-  </tr>
-  <tr>
-    <td>Gabriel Ayala</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>David Anaya</td>
-    <td>8</td>
-  </tr>
+<h2>Tabla de Puntuaciones</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Jugador</th>
+            <th>Puntos</th>
+            <th>Juego</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Gabriel Ayala</td>
+            <td>10</td>
+            <td>Free Fire</td>
+        </tr>
+        <tr>
+            <td>David Anaya</td>
+            <td>8</td>
+            <td>Fornite</td>
+        </tr>
+        <tr>
+            <td>Laura Martínez</td>
+            <td>12</td>
+            <td>FIFA</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Resultados actualizados</td>
+        </tr>
+    </tfoot>
 </table>
-
-<hr>
-
 <footer>
-  <p> 2026 Torneos Gamer</p>
+    <p>Gabriel Ayala</p>
 </footer>
 
-</body>
-</html>
 </body>
 </html>
