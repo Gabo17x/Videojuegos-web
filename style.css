@@ -15,10 +15,14 @@ body {
 }
 
 /* --- NAV --- */
+li:hover{
+    color: aquamarine;
+}
 nav {
-    background-color: #111; /* negro un poco más claro */
+    background-color: #111; 
     padding: 15px 20px;
     margin-bottom: 30px;
+    
 }
 
 nav ul {
@@ -34,6 +38,9 @@ nav ul li a {
     color: #1e90ff; /* azul destacado */
     font-weight: 600;
 }
+li:hover{
+    color: aqua;
+}
 
 /* --- HEADINGS --- */
 h1, h2, h3, h4, h5 {
@@ -42,10 +49,16 @@ h1, h2, h3, h4, h5 {
     color: #1e90ff; /* azul para títulos */
 }
 
-h1 {
-    font-size: 2.5em;
+h1{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300px;
     text-align: center;
-    margin-bottom: 30px;
+    text-decoration:underline;
+    /* text-shadow: 5px 3px color red; */
+    text-shadow: 5px 3px 6px rgb(0, 0, 0),
+    0 0 10px rgb(0, 179, 255),
+    0 0 20px black;
 }
 
 h2 {
@@ -91,17 +104,7 @@ form {
     gap: 15px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"],
-textarea,
-select {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-}
+
 
 /* --- BOTONES --- */
 button, .btn {
@@ -143,7 +146,7 @@ th {
     color: #fff;
 }
 
-/* --- FOOTER --- */
+
 footer {
     text-align: center;
     padding: 15px 0;
@@ -151,7 +154,7 @@ footer {
     margin-top: 30px;
 }
 
-/* --- HERO principal --- */
+
 .hero {
     position: relative;
     background-image: url('img/GettyImages-2173216162-1.jpg');
@@ -176,9 +179,9 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 500px;   /* tamaño más pequeño */
-    margin: 0 auto;     /* centrado horizontal */
-    background-color: rgba(0,0,0,0.7); /* fondo semi-transparente */
+    max-width: 500px;   
+    margin: 0 auto;     
+    background-color: rgba(0,0,0,0.7); 
     padding: 20px;
     border-radius: 10px;
 }
@@ -204,4 +207,115 @@ form button {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+}
+
+table{
+    width: 100%;
+}
+th,td{
+    border: 1px solid rgb(0, 42, 255);
+    padding: 8px;
+}
+tr:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+h2{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300px;
+    text-align: center;
+    text-decoration:underline;
+    /* text-shadow: 5px 3px color red; */
+    text-shadow: 5px 3px 6px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0),
+    0 0 20px rgb(183, 0, 255);
+
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+section, article, nav, footer {
+    width: 100%;
+    margin: 0 auto 30px auto; 
+}
+
+/* TEXTO CENTRADO */
+h1, h2, h3, h4, h5, p {
+    text-align: center;
+}
+
+/* LISTAS CENTRADAS */
+ul, ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* TABLAS CENTRADAS */
+table {
+    margin: 0 auto 20px auto;
+}
+
+/* FORMULARIOS CENTRADOS */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* INPUTS CENTRADOS */
+form input,
+form textarea,
+form select {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+/* CONTENEDOR */
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* CAJA DE NOTICIA */
+.noticia-box {
+    background-color: rgba(0,0,0,0.7);
+    margin: 30px 0;
+    padding: 20px;
+    border-left: 5px solid #1e90ff;
+}
+
+/* FILAS (IMAGEN + TEXTO) */
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* IMÁGENES */
+.fila img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* TEXTO */
+.fila p {
+    max-width: 400px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .fila {
+        flex-direction: column;
+    }
 }
